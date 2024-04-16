@@ -1,0 +1,14 @@
+.content-section-images{
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-section{
+  height: 300px;
+  width: 300px;
+}
+
+.social-media-images{
+  height: 20px;
+  width: 22px;
+}
