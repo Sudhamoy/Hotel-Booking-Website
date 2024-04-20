@@ -13,3 +13,8 @@ function redirectToHomePage() {
   return false; // Prevent the default form submission behavior
 }
 
+// For Loader:
+document.addEventListener("DOMContentLoaded", function() {
+  // Add loaded class to body when content is loaded
+  document.body.classList.add('loaded');
+});

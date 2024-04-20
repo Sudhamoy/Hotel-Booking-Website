@@ -1,12 +1,22 @@
 
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
 body{
   height: 100%;
   width: 100%;
+  background-color: #e0e0e0;
 }
 
 main{
   height: 100%;
   width: 100%;
+}
+
+header{
+  background-color: rosybrown;
 }
 
 #logo{
@@ -15,9 +25,38 @@ main{
   border-radius: 100%;
 }
 
+
+/*Parent container of content-1*/
+#hotel-info{
+  display: flex;
+  justify-content: center;
+}
+
+#content-1{
+  background-color: rgb(132,136,139);
+  height: 20%;
+  width: 50%;
+  margin: 2% 0%;
+}
+
 section img{
   height: 500px;
   width: 500px;
+}
+
+#customer-info{
+  margin: 2%;
+}
+
+#payment-info{
+  margin: 2%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 1% 2%;
+}
+
+footer{
+  background-color: rosybrown;
 }
 
 .social-media-images{
