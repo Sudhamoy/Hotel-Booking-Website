@@ -5,37 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Index</title>
   <link rel="stylesheet" href="./styles/index.css" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
   <main class="container">
 
     <header>
       <img src="./assests/images/logo.png" alt="logo" id="logo"/><br>
-      <a href="login.html">Login</a>
+      <a href="login.html" id="login">Login</a>
     </header>
 
     <section class="content">
+
       <form id="search">
         <input type="text" id="search-bar" placeholder="City"/><br>
       </form>
 
       <figure class="city-cards">
-        <a href="list.html" target="_blank"><img class="image-section" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"></a>
-      <img class="image-section" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"/>
-      <img class="image-section" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"/>
-      <img class="image-section" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"/>
+
+        <a class="card-link" href="list.html">
+          <img class="image-section" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"/>
+          <div class="overlay">Delhi</div>
+        </a>
+
+        <a class="card-link" href="list.html">
+          <img class="image-section" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"/>
+          <div class="overlay">Goa</div>
+        </a>
+
+        <a class="card-link" href="list.html">
+          <img class="image-section" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"/>
+          <div class="overlay">Hyderabad</div>
+        </a>
+
+        <a class="card-link" href="list.html">
+          <img class="image-section" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"/>
+          <div class="overlay">Kolkata</div>
+        </a>
+      
       </figure>
-      <a href="index.html">View more>></a>
+
+      <a href="index.html" id="view-more">View more>></a>
+
     </section>
 
     <footer>
-      <a href="contact.html">Contact Us</a><br>
-      <a href="https://www.facebook.com" target="_blank"><img class="social-media-images" src="./assests/images/facebook.png"></a>
-      <a href="https://www.instagram.com" target="_blank"><img class="social-media-images" src="./assests/images/instagram.png"></a>
-      <a href="https://twitter.com" target="_blank"><img class="social-media-images" src="./assests/images/twitter.png"></a><br>
+
+      <a href="contact.html" id="contact-us">Contact Us</a><br>
+
       <span>@ 2020 ROOM SEARCH PVT. LTD.</span>
+
+      <figure>
+        <a href="https://www.facebook.com" target="_blank"><img class="social-media-images" src="./assests/images/facebook.png"></a>
+        <a href="https://www.instagram.com" target="_blank"><img class="social-media-images" src="./assests/images/instagram.png"></a>
+        <a href="https://twitter.com" target="_blank"><img class="social-media-images" src="./assests/images/twitter.png"></a><br>
+      </figure>
+      
+      
     </footer>
 
   </main>
+
+  <script src="./scripts/index.js"></script>
 </body>
 </html>

@@ -2,12 +2,14 @@
 *{
   margin: 0%;
   padding: 0%;
+  box-sizing: border-box;
 }
 
 body{
   height: 100%;
   width: 100%;
   background-color: #e0e0e0;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 main{
@@ -17,17 +19,88 @@ main{
 
 header{
   background-color: rosybrown;
+  position: sticky;
+  top: 0%;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#login{
+  margin-right: 2%;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 #logo{
   height: 60px;
   width: 60px;
   border-radius: 100%;
+  align-items: center;
+  margin-left: 1%;
 }
 
 
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hotel{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(132, 136, 139);
+  margin-top: 6%;
+  width: 800px;
+
+}
+
+.image img{
+  /* height: 270px; */
+  height:100%;
+  width: 300px;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  align-items: flex-start;
+  justify-content: center;
+  padding-inline: 4%;
+}
+
+
+
+.Customer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-block: 2%;
+  margin-block: 2%;
+  background-color: rosybrown;
+  width: 96%;
+  margin-inline: 2%;
+}
+
+#payment{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#pay-button{
+  color: black;
+  text-decoration: none;
+}
 /*Parent container of content-1*/
-#hotel-info{
+/* #hotel-info{
   display: flex;
   justify-content: center;
 }
@@ -40,8 +113,8 @@ header{
 }
 
 section img{
-  height: 500px;
-  width: 500px;
+  height: 300px;
+  width: 270px;
 }
 
 #customer-info{
@@ -55,11 +128,49 @@ section img{
   padding: 1% 2%;
 }
 
+#payment{
+  margin-bottom: 2rem;
+}
+
+#pay-button{
+  color: black;
+  text-decoration: none;
+} */
+
 footer{
+  height: 4rem;
   background-color: rosybrown;
+  position: sticky;
+  bottom: 0%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > #contact-us{
+  margin-left: 2%;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer > span{
+  font-size: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer > figure{
+  margin-right: 2%;
 }
 
 .social-media-images{
   height: 20px;
   width: 22px;
+}
+
+/* Utility class */
+.family{
+  font-family: cursive;
 }
