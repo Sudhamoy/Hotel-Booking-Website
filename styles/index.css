@@ -29,6 +29,8 @@ header{
 #login{
   margin-right: 2%;
   color: black;
+  background-color: white;
+  border: #f1f1f1;
   cursor: pointer;
   text-decoration: none;
 }
@@ -160,7 +162,8 @@ footer{
 
 footer > #contact-us{
   margin-left: 2%;
-  color: black;
+  color: white;
+  background-color: rgb(8, 113, 137);
   text-decoration: none;
   cursor: pointer;
 }

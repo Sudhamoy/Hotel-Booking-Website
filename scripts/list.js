@@ -1,5 +1,5 @@
-/* function toggleSection(sectionId) {
-  const section = document.getElementById("content-1");
+/* function toggleSection("content-2") {
+  const section = document.getElementById("map");
 
   if (section.style.display === "none") {
       section.style.display = "block";
@@ -9,15 +9,24 @@
   }
 } */
 
-const section=document.getElementById("map");
-//adding event:
-section.addEventListener("click", (e) => {
-  console.log(e);
-  const s1=document.querySelector("#content-3");
-  if(s1.style.display==="block"){
-    s1.style.display="none";
+  function toggleView() {
+    const listView = document.getElementById('content-2');
+    const mapView = document.getElementById('content-3');
+    const listViewBtn = document.getElementById('btnradio1');
+    const mapViewBtn = document.getElementById('btnradio2');
+
+    if (listViewBtn.checked) {
+      listView.style.display = 'block';
+      mapView.style.display = 'none';
+    } else if (mapViewBtn.checked) {
+      listView.style.display = 'none';
+      mapView.style.display = 'block';
+    }
   }
-  else{
-    s1.style.display="block";
-  }
-});
+
+  // Initial toggle based on the default checked radio button
+  toggleView();
+
+  // Add event listeners to radio buttons
+  document.getElementById('btnradio1').addEventListener('change', toggleView);
+  document.getElementById('btnradio2').addEventListener('change', toggleView);
